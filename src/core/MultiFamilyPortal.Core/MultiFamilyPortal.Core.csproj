@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>MultiFamilyPortal</RootNamespace>
+    <!--<Nullable>enable</Nullable>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <InternalsVisibleTo Include="MultiFamilyPortal.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AvantiPoint.EmailService.Postmark" />
+    <PackageReference Include="AvantiPoint.FileStorage.AzureBlobStorage" />
+    <PackageReference Include="AvantiPoint.FileStorage.FileSystem" />
+    <!--<PackageReference Include="BlazorAnimation" Version="2.1.0" />-->
+    <!--<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />-->
+    <PackageReference Include="SkiaSharp.Svg" />
+    <PackageReference Include="System.Drawing.Common" />
+    <PackageReference Include="UAParser" />
+    <PackageReference Include="SkiaSharp" />
+    <PackageReference Include="SkiaSharp.QrCode" />
+    <PackageReference Include="SkiaSharp.NativeAssets.Linux" Condition="$([MSBuild]::IsOsPlatform('OSX'))" />
+    <PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Condition="$([MSBuild]::IsOsPlatform('OSX'))" />
+    <PackageReference Include="Telerik.Documents.Core" />
+    <PackageReference Include="Telerik.Documents.Fixed" />
+    <PackageReference Include="Telerik.Documents.Flow.FormatProviders.Pdf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MultiFamilyPortal.DataContracts\MultiFamilyPortal.DataContracts.csproj" />
+    <ProjectReference Include="..\MultiFamilyPortal.SaaS\MultiFamilyPortal.SaaS.csproj" />
+  </ItemGroup>
+
+</Project>

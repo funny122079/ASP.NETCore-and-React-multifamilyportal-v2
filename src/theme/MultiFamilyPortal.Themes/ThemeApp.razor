@@ -1,0 +1,23 @@
+﻿<CascadingWrapper Theme=@Theme Tenant=@_tenant>
+  <Router AppAssembly="@Assembly" AdditionalAssemblies=@_themeFactory.GetAdditionalAssemblies(Theme)>
+    <Found Context="routeData">
+      <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@Theme.Layout" />
+      <FocusOnNavigate RouteData="@routeData" Selector="themecontent" />
+    </Found>
+    <NotFound>
+      @if(Theme._404 != null)
+      {
+        <LayoutView Layout="@Theme.Layout">
+          <DynamicComponent Type=@Theme._404 />
+        </LayoutView>
+      }
+      else
+      {
+        <PageTitle>Not found</PageTitle>
+        <LayoutView Layout="@Theme.Layout">
+          <p role="alert">Sorry, there's nothing at this address.</p>
+        </LayoutView>
+      }
+    </NotFound>
+  </Router>
+</CascadingWrapper>

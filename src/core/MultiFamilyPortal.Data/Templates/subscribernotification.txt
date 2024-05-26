@@ -1,0 +1,11 @@
+﻿Hello {{Email}},
+
+We just published a brand new post: {{Title}}
+
+Head over to {{Url}} to read more!
+
+{{Summary}}
+
+
+You Subscribed on: {{SubscribedDate}}
+To Unsubscribe visit this link: {{UnsubscribeLink}}

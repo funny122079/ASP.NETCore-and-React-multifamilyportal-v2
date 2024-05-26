@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>MultiFamilyPortal</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="MultiFamilyPortal.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DynamicData" />
+    <PackageReference Include="ReactiveUI.Fody" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MultiFamilyPortal.Data\MultiFamilyPortal.Data.csproj" />
+  </ItemGroup>
+
+</Project>

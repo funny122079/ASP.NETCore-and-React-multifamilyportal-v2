@@ -1,0 +1,41 @@
+﻿@page "/"
+@using MultiFamilyPortal.SaaS.Models
+
+<PageTitle>Tenants</PageTitle>
+
+<RadzenDataGrid Data="@_tenants" TItem="Tenant" AllowPaging="true">
+    <HeaderTemplate>
+        <RadzenStack Orientation="@Orientation.Horizontal" Wrap="FlexWrap.Wrap" JustifyContent="JustifyContent.Stretch">
+            <RadzenStack Orientation="Orientation.Vertical" JustifyContent="JustifyContent.Start">
+                <RadzenTextBox Placeholder="Search..." />
+            </RadzenStack>
+            <RadzenStack Orientation="Orientation.Vertical" JustifyContent="JustifyContent.End">
+                <RadzenButton Text="Add Tenant" Icon="add_circle_outline" ButtonStyle="ButtonStyle.Primary" />
+            </RadzenStack>
+        </RadzenStack>
+    </HeaderTemplate>
+    <Columns>
+        <RadzenDataGridColumn TItem="Tenant" Property="Disabled" Title="Status" Width="50px">
+            <Template Context="tenant">
+                @if (tenant!.Disabled)
+                {
+                    <span style="color: red;">
+                        <i class="fa-solid fa-circle-x"></i>
+                    </span>
+                }
+                else
+                {
+                    <span style="color: green;">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </span>
+                }
+            </Template>
+        </RadzenDataGridColumn>
+        <RadzenDataGridColumn TItem="Tenant" Property="Host" Title="Host" Width="160px"/>
+        <RadzenDataGridColumn TItem="Tenant" Property="Environment" Title="Environment" Width="160px"/>
+        <RadzenDataGridColumn TItem="Tenant" Property="DatabaseSchema" Title="Database Schema" Width="160px"/>
+        <RadzenDataGridColumn TItem="Tenant" Property="Created" Title="Created" Width="160px"/>
+    </Columns>
+</RadzenDataGrid>
+
+

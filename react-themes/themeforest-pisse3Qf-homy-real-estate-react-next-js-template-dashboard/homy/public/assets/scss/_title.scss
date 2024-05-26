@@ -1,0 +1,61 @@
+// Title One
+.title-one {
+    .upper-title {
+        font-size: 16px;
+        letter-spacing: 2px;
+        color: rgba($color: #000000, $alpha: 0.4);
+        display: block;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        &.color {
+            color: $color-one;
+        }
+    }
+    h2.fs-xl {
+        font-size: 100px;
+        line-height: 1.06em;
+    }
+    h2.fs-lg {
+        font-size: 90px;
+        line-height: 1.06em;
+        .color {
+            color: $color-one;
+        }
+    }
+    span {
+        position: relative;
+        z-index: 1;
+        img {
+            position: absolute;
+            bottom: -2%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+    }
+    p {
+        margin: 32px 0 0;
+        &.mt-xs {
+            margin-top: 20px;
+        }
+    }
+    h2 i {
+        font-style: italic;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+    .star-shape {
+        img {
+            position: static;
+            transform: none;
+            display: inline-block;
+            max-width: 4%;
+        }
+        
+    }
+    em {
+        span {
+            color: $color-one;
+        }
+    }
+}

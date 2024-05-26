@@ -1,0 +1,58 @@
+/* ----------------------------------------------------
+    Header Area
+---------------------------------------------------- */
+.ltn__doc-header-area {
+    margin-bottom: 50px;
+}
+.ltn__doc-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+
+/* ----------------------------------------------------
+    Documentation Area
+---------------------------------------------------- */
+.ltn__documentation-content-area {
+	padding-left: 450px;
+    padding-right: 100px;
+}
+.ltn__doc-section-title-area {
+	margin: 60px 0 40px -50px;
+    background-color: var(--white-2);
+    padding: 20px 30px 5px 50px;
+}
+.ltn__doc-section-content img {
+    margin-bottom: 30px;
+    border: 1px solid var(--border-color-1);
+}
+.list-menu-1 {
+    margin: 30px 0;
+}
+.list-menu-1 ul {
+    padding: 0;
+}
+.list-menu-1 li {
+    display: block;
+    list-style: none;
+    margin-top: 5px;
+}
+.list-menu-1 li span {
+    min-width: 80px;
+    display: inline-block;
+}
+@media (max-width: 991px) {
+    .ltn__documentation-content-area {
+		padding-left: 100px;
+    	padding-right: 60px;
+	}
+	
+}
+
+
+/* ----------------------------------------------------
+    Name Area
+---------------------------------------------------- */
+

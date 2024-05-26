@@ -1,0 +1,84 @@
+.service-details {
+    .service-post {
+        .btn-line {
+            display: inline-block;
+            line-height: 28px;
+            font-size: 12px;
+            letter-spacing: 0.12px;
+            padding: 0 18px;
+            color: #000;
+            border: 1px solid #000;
+            margin-bottom: 18px;
+        }
+        .img-gallery {
+            img {
+                border-radius: 20px;
+            }
+        }
+        h4 {
+            font-size: 48px;
+        }
+        .feature-wrapper {
+            background: url(../images/shape/shape_77.svg) no-repeat center;
+            background-size: cover;
+            padding: 20px;
+            .bg-wrapper {
+                background: #fff;
+                border-radius: 20px;
+                padding: 15px 30px 30px;
+            }
+        }
+    }
+    .service-sidebar {
+        .service-category {
+            background: url(../images/shape/shape_78.svg) no-repeat center;
+            background-size: cover;
+            padding: 36px;
+            border-radius: 20px;
+            ul {
+                background: #fff;
+                border: 1px solid #000;
+                border-radius: 20px;
+                padding: 0 30px;
+                a {
+                    padding: 26px 0;
+                    color: #000;
+                    border-bottom: 1px solid #000;
+                    display: block;
+                    position: relative;
+                    z-index: 1;
+                    &:after {
+                        content: '\F138';
+                        font-family: $bootstrapFont;
+                        width: 30px;
+                        height: 30px;
+                        text-align: center;
+                        line-height: 28px;
+                        border: 1px solid #000;
+                        border-radius: 50%;
+                        float: right;
+                        margin-left: 10px;
+                        @include transition (0.3s);
+                    }
+                    &:hover,&.active {
+                        &:after {
+                            background: #FFC8B1;
+                            transform: rotate(180deg);
+                        }
+                    }
+                    &.active {
+                        font-weight: 500;
+                    }
+                }
+                li:last-child a {
+                    border: none;
+                }
+            }
+        }
+        .contact-banner {
+            background: #242424;
+            padding: 45px 15px;
+            border-radius: 20px;
+        }
+    }
+}

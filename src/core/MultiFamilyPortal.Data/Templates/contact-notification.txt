@@ -1,0 +1,10 @@
+﻿You have a new Contact Request:
+
+First Name: {{FirstName}}
+Last Name: {{LastName}}
+Email: {{Email}}
+Phone: {{Phone}}
+
+Comments:
+
+{{Comments}}

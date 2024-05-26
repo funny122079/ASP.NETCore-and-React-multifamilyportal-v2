@@ -1,0 +1,22 @@
+[
+  {
+    "clientId": 0,
+    "host": "localhost",
+    "isActive": true,
+    "themeName": "login"
+  },
+
+  {
+    "clientId": 1,
+    "host": "mydomain",
+    "isActive": false,
+    "themeName": "quarter"
+  },
+
+  {
+    "clientId": 2,
+    "host": "yourdomain",
+    "isActive": false,
+    "themeName": "dreamhouse"
+  }
+]

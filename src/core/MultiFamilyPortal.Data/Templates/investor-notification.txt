@@ -1,0 +1,13 @@
+﻿You have a new Investor Inquiry:
+
+First Name: {{FirstName}}
+Last Name: {{LastName}}
+Email: {{Email}}
+Phone: {{Phone}}
+Timezone: {{Timezone}}
+
+Looking to Invest: {{LookingToInvest}}
+
+Comments:
+
+{{Comments}}

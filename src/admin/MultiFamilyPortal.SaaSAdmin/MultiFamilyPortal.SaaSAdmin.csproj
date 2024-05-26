@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MFPContext.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="MFPContext.sql" LogicalName="%(Filename)%(Extension)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Radzen.Blazor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\MultiFamilyPortal.Data\MultiFamilyPortal.Data.csproj" />
+    <ProjectReference Include="..\..\core\MultiFamilyPortal.SaaS\MultiFamilyPortal.SaaS.csproj" />
+  </ItemGroup>
+
+</Project>

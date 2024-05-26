@@ -1,0 +1,58 @@
+const reviews = [
+  {
+    id: 1,
+    rating: 5,
+    date: "2 days ago",
+    text: "“There are many variations of passages of Lorem Ipsum available, in majority have into the find end to suffered.”",
+    authorName: "Arnold Burner",
+    authorPosition: "Senior Designer",
+    img: "https://placehold.co/190x310",
+  },
+  {
+    id: 2,
+    rating: 5,
+    date: "2 days ago",
+    text: "“There are many variations of passages of Lorem Ipsum available, in majority have into the find end to suffered.”",
+    authorName: "Arnold Burner",
+    img: "https://placehold.co/190x310",
+    authorPosition: "Senior Designer",
+  },
+  {
+    id: 3,
+    rating: 5,
+    date: "2 days ago",
+    text: "“There are many variations of passages of Lorem Ipsum available, in majority have into the find end to suffered.”",
+    authorName: "Arnold Burner",
+    img: "https://placehold.co/190x310",
+    authorPosition: "Senior Designer",
+  },
+  {
+    id: 4,
+    rating: 5,
+    date: "2 days ago",
+    text: "“There are many variations of passages of Lorem Ipsum available, in majority have into the find end to suffered.”",
+    authorName: "Arnold Burner",
+    img: "https://placehold.co/190x310",
+    authorPosition: "Senior Designer",
+  },
+  {
+    id: 5,
+    rating: 5,
+    date: "2 days ago",
+    text: "“There are many variations of passages of Lorem Ipsum available, in majority have into the find end to suffered.”",
+    authorName: "Arnold Burner",
+    img: "https://placehold.co/190x310",
+    authorPosition: "Senior Designer",
+  },
+  {
+    id: 6,
+    rating: 5,
+    date: "2 days ago",
+    text: "“There are many variations of passages of Lorem Ipsum available, in majority have into the find end to suffered.”",
+    authorName: "Arnold Burner",
+    img: "https://placehold.co/190x310",
+    authorPosition: "Senior Designer",
+  },
+];
+
+export default reviews;

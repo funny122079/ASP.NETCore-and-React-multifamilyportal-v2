@@ -1,0 +1,425 @@
+
+
+// Card Style One
+.card-style-one {
+    .fs-text {
+        letter-spacing: 0.16px;
+        color: rgba($color: #000000, $alpha: 0.4);
+    }
+    h5 {
+        letter-spacing: -0.5px;
+    }
+    &.arrow:before,
+    &.arrow:after {
+        content: url(../images/icon/icon_10.svg);
+        position: absolute;
+        top:88px;
+        left: -90px;
+    }
+    &.arrow:after {
+        left: auto;
+        right:-72px;
+    }
+}
+// Card Style Two
+.card-style-two {
+    h4 {
+        font-size: 28px;
+    }
+    .content {
+        position: absolute;
+        width: 100%;
+        top:0;
+        left: 0;
+        padding: 40px 15px 0;
+        .btn {
+            font-size: 12px;
+            letter-spacing: 0.36px;
+            width: 112px;
+            line-height: 30px;
+            border: none;
+            border-radius: 0;
+            background: #fff;
+            padding: 0;
+        }
+        .btn-line {
+            display: inline-block;
+            line-height: 28px;
+            font-size: 12px;
+            letter-spacing: 0.12px;
+            padding: 0 18px;
+            color: #000;
+            border: 1px solid #000;
+        }
+        .btn-four {
+            width: 80px;
+            height: 80px;
+            font-size: 1.5em;
+            opacity: 0;
+        }
+    }
+    &:hover {
+        .btn {
+            background: $color-one;
+            color: #fff;
+        }
+        img {
+            transform: scale3d(1.1,1.1,1);
+        }
+        .btn-four {
+            opacity: 1;
+        }
+    }
+}
+// Card Style Three
+.card-style-three {
+    background: url(../images/shape/shape_20.svg) no-repeat center;
+    background-size: cover;
+    padding: 20px;
+    .bg-wrapper {
+        background: #fff;
+        padding: 25px 15px;
+    }
+    &.border-20 {
+        border-radius: 20px;
+        .bg-wrapper {
+            border-radius: 20px;
+        }
+    }
+}
+// Card Style Four
+.card-style-four {
+    .icon {
+        width: 52px;
+        height: 52px;
+        border: 2px solid #000;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            top:0;
+            left: 6px;
+            z-index: -1;
+            background: #FFEBDC;
+            @include transition (0.2s);
+        }
+        &.style-two {
+            border-color: $color-one;
+        }
+    }
+}
+// Card Style Five
+.card-style-five {
+    padding: 50px 60px 70px;
+    background: #fff;
+    border: 1px solid #E1E1E1;
+    border-radius: 30px;
+    .icon {
+        width: 115px;
+    }
+    &:hover {
+        background: #FAFAFA;
+    }
+}
+// Card Style Six
+.card-style-six {
+    padding: 40px 52px 50px;
+    background: #fff;
+    .icon {
+        width: 55px;
+        height: 55px;
+        background: #000;
+    }
+    h5 {
+        font-size: 20px;
+        letter-spacing: 0.2px;
+    }
+    &:hover {
+        .icon {
+            background: $color-one;
+        }
+    }
+}
+// Card Style Seven
+.card-style-seven {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 338px;
+    height: 338px;
+    background-image: url(../images/media/img_38.jpg);
+    &.category-4-item-2{
+        background-image: url(../images/media/img_39.jpg);
+    }
+    &.category-4-item-3{
+        background-image: url(../images/media/img_40.jpg);
+    }
+    &.category-4-item-4{
+        background-image: url(../images/media/img_41.jpg);
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left: 0;
+        border-radius: 50%;
+        background: rgba($color: #000000, $alpha: 0.25);
+        z-index: -1;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left: 0;
+        border-radius: 50%;
+        background: rgba($color: #000000, $alpha: 0.25);
+        z-index: -1;
+        transform: scale(0.5);
+        opacity: 0;
+        @include transition(0.3s);
+    }
+    &:hover {
+        .title h4 {
+            text-decoration: underline;
+            transform: translateY(-10px);
+        }
+        &:after {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+// Card Style Eight
+.card-style-eight { 
+    .icon {
+        width: 100px;
+    }
+    .text {
+        width: calc(100% - 100px);
+        padding-left: 35px;
+        h5 {
+            letter-spacing: -0.5px;
+            margin-bottom: 17px;
+        }
+        p {
+            margin: 0;
+            color: rgba($color: #fff, $alpha: 0.6);
+        }
+    }
+}
+// Card Style Nine
+.card-style-nine { 
+    background: #F5F5F5;
+    padding: 55px 45px 35px;
+    .tag {
+        font-size: 14px;
+        line-height: 29px;
+        padding: 0 12px;
+        left: 0;
+        top:15px;
+        z-index: 1;
+    }
+    .logo-wrapper {
+        height: 130px;
+        img {
+            max-height: 100%;
+        }
+    }
+    .agency-name {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+    .rating {
+        margin: 0 -2px;
+        li {
+            padding: 0 2px;
+            font-size: 13px;
+            &:last-child {
+                font-size: 15px;
+                color: rgba($color: #000000, $alpha: 0.5);
+                margin-left: 5px;
+            }
+        }
+        i {
+            color: #FFCC4A;
+
+        }
+    }
+    p {
+        font-size: 17px;
+        margin: 30px 0 45px;
+    }
+    .btn-eight {
+        line-height: 58px;
+    }
+}
+// Card Style Ten
+.card-style-ten { 
+    background: #fff;
+    padding: 38px 45px 45px;
+    border-radius: 20px;
+    .icon {
+        width: 55px;
+        height: 55px;
+        background: #000;
+    }
+    h6 {
+        font-size: 20px;
+        letter-spacing: 0.2px;
+        margin: 35px 0 18px;
+    }
+    p {
+        margin-bottom: 40px;
+    }
+    &:hover {
+        .icon {
+            background: $color-one;
+        }
+    }
+}
+// Card Style Eleven
+.card-style-eleven { 
+    .icon {
+        height: 80px;
+        img {
+            max-height: 100%;
+        }
+    }
+    h5 {
+        font-size: 22px;
+    }
+}
+// Location Card One
+.location-card-one {
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 20px;
+    height: 400px;
+    padding: 15px 15px 20px;
+    background-image: url(../images/media/img_05.jpg);
+    &.card{
+        &-2{
+            background-image: url(../images/media/img_06.jpg);
+        }
+        &-3{
+            background-image: url(../images/media/img_07.jpg);
+        }
+        &-4{
+            background-image: url(../images/media/img_08.jpg);
+        }
+        &-5{
+            background-image: url(../images/media/img_09.jpg);
+        }
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.72) 100%);
+        mix-blend-mode: luminosity;
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left: 0;
+        z-index: -1;
+        @include transition(0.3s);
+    }
+    &:hover .content {
+        transform: translateY(-20px);
+    }
+}
+// Location Card Two
+.location-card-two {
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 300px;
+    padding: 10px;
+    background-image: url(../images/media/img_13.jpg);
+    &.location-card-2{
+        background-image: url(../images/media/img_14.jpg);
+    }
+    &.location-card-3{
+        background-image: url(../images/media/img_15.jpg);
+    }
+    &.location-card-4{
+        background-image: url(../images/media/img_16.jpg);
+    }
+    &.location-card-5{
+        background-image: url(../images/media/img_17.jpg);
+    }
+    &.location-card-6{
+        background-image: url(../images/media/img_18.jpg);
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        background: rgba($color: #000000, $alpha: 0.25);
+        width: 100%;
+        height: 100%;
+        top:0;
+        left: 0;
+        z-index: -1;
+        @include transition(0.3s);
+    }
+    h5 {
+        font-size: 44px;
+        @include transition(0.4s);
+    }
+    &:hover {
+        h5 {
+            transform: translateY(-20px);
+            text-decoration: underline;
+        }
+        &:before {
+            background: rgba($color: #000000, $alpha: 0.35);
+        }
+    }
+}
+// Location Card Three
+.location-card-three {
+    .image-bg {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 338px;
+        height: 338px;
+        background-image: url(../images/media/img_38.jpg);
+        &.home-5-feature-item-2{
+            background-image: url(../images/media/img_39.jpg);
+        }
+        &.home-5-feature-item-3{
+            background-image: url(../images/media/img_40.jpg);
+        }
+        &.home-5-feature-item-4{
+            background-image: url(../images/media/img_41.jpg);
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top:0;
+            left: 0;
+            border-radius: 50%;
+            background: rgba($color: #000000, $alpha: 0.25);
+            z-index: -1;
+            transform: scale(0.5);
+            opacity: 0;
+            @include transition(0.3s);
+        }
+    }
+    &:hover {
+        .image-bg:after {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}

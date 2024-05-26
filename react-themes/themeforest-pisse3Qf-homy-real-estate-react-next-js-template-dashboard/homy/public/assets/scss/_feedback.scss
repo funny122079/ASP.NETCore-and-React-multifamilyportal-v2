@@ -1,0 +1,485 @@
+// Feedback Section One
+.feedback-section-one {
+    &:before,&:after {
+        content: '';
+        position: absolute;
+        width: calc(50% - 65px);
+        height: 2px;
+        background: #000;
+        bottom: 0;
+        left: 0;
+    }
+    &:after {
+        left: auto;
+        right: 0;
+    }
+    .main-content {
+        max-width: 1760px;
+        padding: 0 12px;
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        padding: 0;
+        button {
+            background: #282828;
+        }
+    }
+}
+.feedback-block-one {
+    .avatar {
+        width: 60px;
+        height: 60px;
+    }
+    blockquote {
+        font-size: 36px;
+        letter-spacing: -0.5px;
+        line-height: 1.555em;
+        color: #000;
+        margin: 0;
+    }
+}
+// Feedback Section Two 
+.feedback-section-two {
+    background: #0D1A1C;
+    .bg-wrapper {
+        background: url(../images/shape/shape_13.svg) no-repeat center;
+        background-size: cover;
+        padding: 50px 50px;
+    }
+    .main-content {
+        padding: 155px 50px 190px;
+        &:before,&:after {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 1px;
+            background: rgba($color: #fff, $alpha: 0.05);
+            top:0;
+            z-index: -1;
+            left: 44%;
+        }
+        &:before {
+            left: 94%;
+        }
+    }
+    .shape_01 {
+        right: 6%;
+        bottom: 16%;
+        max-width: 11%;
+        animation: rotated 250s infinite linear;
+    }
+    .shape_02 {
+        right: 22%;
+        bottom: 26%;
+        max-width: 7%;
+    }
+}
+.feedback-block-two {
+    blockquote {
+        font-size: 74px;
+        line-height: 1.1486em;
+        margin: 0;
+        color: #000;
+        span {
+            font-style: italic;
+            color: $color-one;
+            text-decoration-line: underline;
+            text-decoration-thickness: 3px;
+        }
+    }
+    .avatar {
+        width: 60px;
+        height: 60px;
+    }
+}
+// Feedback Section Three
+.feedback-section-three {
+    background: #0D1A1C;
+    .bg-line {
+        background: url(../images/shape/shape_23.svg) no-repeat center;
+        background-size: cover;
+
+        .shape_01 {
+            left: 1%;
+            bottom: 23%;
+            max-width: 7%;
+        }
+        .shape_02 {
+            left: 20%;
+            bottom: 17%;
+            max-width: 23%;
+        }
+    }
+    .feedback-bg-wrapper {
+        background: url(../images/shape/shape_24.svg) no-repeat center;
+        background-size: cover;
+        padding: 50px 0 0 68px;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            bottom: -32px;
+            right:140px;
+            background: $color-one;
+        }
+        .icon {
+            width: 60px;
+            height: 60px;
+            background: $color-one;
+        }
+        .rating-box {
+            position: absolute;
+            z-index: 1;
+            right: -13%;
+            top: -12%;
+            text-align: center;
+            max-width: 26%;
+            img {animation: rotated 50s infinite linear;}
+            .rate {
+                color: #000;
+                font-size: 24px;
+                line-height: 1.08em;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50% , -50%);
+                span {
+                    font-weight: normal;
+                    font-size: 0.66em;
+                }
+            }
+          }
+    }
+    .slick-dots {
+        position: absolute;
+        left: 15px;
+        bottom: 70px;
+        margin: 0;
+        padding: 0;
+        button {
+            width: 10px;
+            height: 10px;
+            background: transparent;
+            border: 1px solid #fff;
+            margin-right: 3px;
+        }
+        .slick-active button {
+            background: #fff;
+        }
+    }
+}
+.feedback-block-three {
+    position: relative;
+    blockquote {
+        font-size: 44px;
+        line-height: 1.613em;
+        color: #fff;
+        margin: 54px 40px 34px 0;
+        span {
+            color: $color-one;
+        }
+    }
+    .avatar {
+        width: 140px;
+        height: 150px;
+    }
+}
+// Feedback Section Four
+.feedback-section-four {
+    .section-btn {
+         position: absolute;
+         right: 160px;
+         top:75px;
+    }
+    .slick-arrow-two {
+        position: absolute;
+        right: 0;
+        top:65px;
+    }
+    .shape_01 {
+        right: 0;
+        top:-1%;
+        max-width: 49%;
+    }
+    .shape_02 {
+        left: 0;
+        bottom:0;
+        max-width: 16%;
+    }
+}
+.feedback-block-four {
+    padding: 35px 45px 45px;
+    border: 1px solid #E9E9E9;
+    background: #fff;
+    border-radius: 20px;
+    position: relative;
+    @include transition (0.2s);
+    .avatar {
+        width: 60px;
+        height: 60px;
+    }
+    blockquote {
+        font-size: 22px;
+        line-height: 2em;
+        color: #000;
+        margin: 35px 0 60px;
+    }
+    .rating {
+        li {
+            color: #FFCC4A;
+            margin-right: 4px;
+        }
+    }
+    .icon {
+        position: absolute;
+        right: 45px;
+        bottom: 30px;
+    }
+}
+.slick-center .feedback-block-four {
+    background: #F5F5F5;
+    border-color: #F5F5F5;
+}
+// Feedback Section Five
+.feedback-section-five {
+    .bg-wrapper::before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        top:0;
+        bottom: 0;
+        right: 0;
+        background: url(../images/media/img_43.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .bg-wrapper:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background: url(../images/shape/shape_49.svg) no-repeat center;
+        background-size: cover;
+        right: -35px;
+        bottom: -35px;
+        width: 49%;
+        height: 56%;
+    }
+    .content-wrapper {
+        max-width: 790px;
+        padding: 0 70px;
+        .icon {
+            width: 62px;
+            height: 62px;
+            background: $color-one;
+        }
+        .slick-dots {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: 15px;
+            bottom: 18px;
+            li {
+                button {
+                    width: 10px;
+                    height: 10px;
+                    border: 1px solid #000;
+                    background: transparent;
+                }
+                &.slick-active {
+                    button {
+                        background: #000;
+                    }
+                }
+            }
+        }
+        
+    }
+    .rating-wrapper {
+        position: absolute;
+        z-index: 1;
+        background: #fff;
+        padding: 11px 32px 23px;
+        bottom: 30px;
+        right: 30px;
+    }
+}
+.feedback-block-five {
+    blockquote {
+        padding: 24px 0 38px;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        font-size: 46px;
+        line-height: 1.499em;
+        color: #000;
+        font-style: italic;
+        margin-bottom: 40px;
+        span {
+            color: $color-one;
+        }
+    }
+    .avatar {
+        width: 60px;
+        height: 60px;
+    }
+}
+// Feedback Section Six
+.feedback-section-six {
+    .slick-slider {
+        padding: 0 -30px;
+        .slick-slide {
+            padding: 0 30px;
+        }
+    }
+    .slick-dots {
+        margin: 75px 0 0;
+        padding: 0;
+        justify-content: center;
+        button {
+            width: 10px;
+            height: 10px;
+            background: rgba($color: #000, $alpha: 0.15);
+        }
+        .slick-active {
+            button {
+                background: #000;
+            }
+        }
+    }
+    .shape_01 {
+        bottom: 0;
+        left: 0;
+        max-width: 19%;
+        opacity: 0.3;
+    }
+    .shape_02 {
+        bottom: 0;
+        right: 0;
+        max-width: 15%;
+        opacity: 0.3;
+    }
+}
+.feedback-block-six {
+    padding: 50px 60px;
+    background: #fff;
+    .rating {
+        li {
+            font-size: 20px;
+            color: #FFCC4A;
+            margin-right: 5px;
+        }
+    }
+    blockquote {
+        font-size: 32px;
+        line-height: 1.718em;
+        color: #000;
+        margin: 30px 0 50px;
+    }
+    .avatar {
+        width: 60px;
+        height: 60px;
+    }
+}
+// Feedback Section Seven
+.feedback-section-seven {
+    .content-wrapper {
+        padding: 30px 45px 30px 90px;
+        border-left: 1px solid #000;
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 122px;
+            top:0;
+            left: 0;
+            background: url(../images/shape/shape_61.svg) no-repeat center top;
+            background-size: cover;
+            z-index: -1;
+        }
+        &:after {
+            top:auto;
+            bottom: 0;
+        }
+        .icon {
+            width: 70px;
+            height: 70px;
+            background: $color-one;
+        }
+        .feedback-block-five {
+            blockquote {
+                border: none;
+                margin-bottom: 30px;
+            }
+        }
+        .slick-dots {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: 15px;
+            bottom: 24px;
+            li {
+                button {
+                    width: 10px;
+                    height: 10px;
+                    border: 1px solid #000;
+                    background: transparent;
+                }
+                &.slick-active {
+                    button {
+                        background: #000;
+                    }
+                }
+            }
+        }
+        .rating-box {
+            position: absolute;
+            z-index: 1;
+            right: -13%;
+            top: -12%;
+            text-align: center;
+            max-width: 26%;
+            img {animation: rotated 50s infinite linear;}
+            .rate {
+                color: #000;
+                font-size: 24px;
+                line-height: 1.08em;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50% , -50%);
+                span {
+                    font-weight: normal;
+                    font-size: 0.66em;
+                }
+            }
+          }
+        
+    }
+    .rating-box {
+        position: absolute;
+        z-index: 1;
+        left: 22%;
+        bottom: 13%;
+        text-align: center;
+        max-width: 16%;
+        img {
+            animation: rotated 50s infinite linear;
+        }
+        .rate {
+            color: #fff;
+            font-size: 24px;
+            line-height: 1.08em;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            span {
+                font-weight: normal;
+                font-size: 0.66em;
+            }
+        }
+      }
+}

@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Templates\**" />
+    <EmbeddedResource Include="Templates\*.html;Templates\*.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Humanizer.Core" />
+    <!--<PackageReference Include="Microsoft.AspNetCore.ApiAuthorization.IdentityServer" />-->
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MultiFamilyPortal.Abstractions\MultiFamilyPortal.Abstractions.csproj" />
+    <ProjectReference Include="..\MultiFamilyPortal.SaaS\MultiFamilyPortal.SaaS.csproj" />
+  </ItemGroup>
+
+</Project>

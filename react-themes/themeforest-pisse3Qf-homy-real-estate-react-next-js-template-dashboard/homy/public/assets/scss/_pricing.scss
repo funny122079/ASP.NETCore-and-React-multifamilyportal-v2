@@ -1,0 +1,184 @@
+.pricing-nav-one {
+    .nav {
+        border: 2px solid $color-one;
+        border-radius: 10px;
+        overflow: hidden;
+        .nav-link {
+            width: 160px;
+            height: 50px;
+            font-weight: 500;
+            font-size: 17px;
+            color: $color-one;
+            background: transparent;
+            padding: 0;
+            margin: 0;
+            border: 0;
+            border-radius: 0;
+            &.active {
+                background: $color-one;
+                color: #fff;
+            }
+        }
+    }
+}
+// Pricing Section One
+.pricing-section-one {
+    .discount-text {
+        font-size: 16px;
+        color: $color-one;
+    }
+    .dot-bg-wrapper {
+        background: url(../images/shape/shape_67.svg) no-repeat center;
+        background-size: cover;
+        padding: 55px;
+    }
+    .main-bg {
+        border: 1px solid #000;
+        border-radius: 20px;
+        background: #fff;
+        overflow: hidden;
+    }
+    .pr-column-wrapper {
+        width: 24%;
+        border-left: 1px solid #000;
+        .pr-header {
+            border-bottom: 1px solid #000;
+            padding: 30px 15px 15px;
+            height: 230px;
+            .plan {
+                font-size: 13px;
+                letter-spacing: 1px;
+                background: #fff;
+                line-height: 26px;
+                padding: 0 20px;
+                border: 1px solid #000;
+                border-radius: 18px;
+                display: inline-block;
+            }
+            .price {
+                font-size: 52px;
+                color: #000;
+                display: block;
+                margin: 20px 0 8px;
+            }
+        }
+        ul {
+            li {
+                margin: 40px 0;
+                span {
+                    font-size: 13px;
+                    margin-bottom: 15px;
+                    display: none;
+                }
+                .icon {
+                    width: 38px;
+                    height: 38px;
+                    font-size: 22px;
+                    color: #000;
+                    margin: 0 auto;
+                    background: #fff;
+                    border: 1px solid transparent;
+                    &.available {
+                        color: $color-one;
+                    }
+                }
+                &:first-child {
+                    margin-top: 22px;
+                }
+                &:last-child {
+                    margin-bottom: 35px;
+                }
+            }
+        }
+        .pr-footer {
+            border-top: 1px solid #000;
+            padding: 40px 15px 50px; 
+        }
+        &.active {
+            background: #FFF8F4;
+            .icon {
+                border-color: #000;
+                &.available {
+                    border-color: $color-one;
+                }
+            }
+            .btn-twelve {
+                background: #000;
+                color: #fff;
+            }
+        }
+    }
+    .left-panel {
+        position: absolute;
+        width: 28%;
+        left: 0;
+        top:229px;
+        bottom: 140px;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        li {
+            font-size: 17px;
+            font-weight: 500;
+            padding: 29px 10px 25px 35px;
+            color: #000;
+        }
+    }
+}
+// Pricing Section Two
+.pricing-section-two {
+    .pr-column-wrapper {
+        border: 1px solid #000;
+        padding: 0 25px 45px;
+        .pr-header {
+            border-bottom: 1px solid #000;
+            padding: 30px 0;
+            .plan {
+                font-size: 24px;
+                letter-spacing: 1px;
+            }
+            .price {
+                font-size: 72px;
+                color: #000;
+                display: block;
+                margin: 20px 0 8px;
+            }
+            p {
+                color: rgba($color: #000000, $alpha: 0.5);
+            }
+        }
+        ul li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 24px;
+            text-align: left;
+            color: #000;
+            &:before {
+                content: '\f00c';
+                font-family:$font-awesome;
+                position: absolute;
+                left: 0;
+                top:2px;
+                font-size: 1em;
+            }
+            &.disable {
+                color: #B9B9B9;
+                &:before {
+                    content: '\f00d';
+                }
+            }
+        }
+        &.active {
+            background: #F3F3F3;
+            border-color: #F3F3F3;
+            .btn-twelve {
+                background: #000;
+                border-color: #000;
+                color: #fff;
+                &:hover {
+                    background: $color-one;
+                    border-color: $color-one;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,138 @@
+.carusole-dot {
+  display: block;
+  background: #9493a0 !important;
+  margin-top: 50px !important;
+  border: none;
+  width: 30px !important;
+  height: 3px;
+  padding: 0;
+  border-radius: 8px;
+  text-indent: -9999px;
+  transition: 0.5s;
+  margin-right: 12px;
+}
+
+.carusole-dot:hover {
+  background: #7166f0 !important;
+  width: 62px !important;
+  margin-top: 50px;
+  margin-right: 12px;
+  border-radius: 8px;
+  transition: 0.5s;
+  border: none;
+  outline: none;
+}
+
+.carusole-dot-active {
+  background: #7166f0 !important;
+  width: 62px !important;
+  margin-top: 50px;
+  margin-right: 12px;
+  border-radius: 8px;
+  transition: 0.5s;
+  border: none;
+  outline: none;
+}
+.navbar-top {
+  position: fixed;
+  width: 100%;
+  border-radius: 0 !important;
+  top: 0;
+}
+
+.sidebar {
+  position: absolute;
+  left: -100%;
+  transition: 1s;
+}
+
+.sidebar-show {
+  z-index: 9999;
+  left: 0;
+}
+
+.round-dot {
+  width: 24px;
+  height: 24px;
+  background: transparent !important;
+  transition: all 0.4s ease;
+  margin: 0 !important;
+  border: 1px solid #d5d2fa !important;
+  opacity: 1 !important;
+  position: relative !important;
+  border-radius: 50%;
+  gap: 10px;
+  margin-right: 12px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.round-dot-active span {
+  background: #0e7fe1 !important;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+
+.round-dot2 {
+  width: 24px;
+  height: 24px;
+  background: transparent !important;
+  transition: all 0.4s ease;
+  margin: 0 !important;
+  border: 1px solid #d5d2fa !important;
+  opacity: 1 !important;
+  position: relative !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0 !important;
+  text-align: left !important;
+}
+
+.round-dot2-active span {
+  background: #ffff !important;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+
+.dotList {
+  justify-content: flex-start;
+  gap: 20px;
+}
+.whiteDotList {
+  gap: 15px;
+}
+.customerReviewDot {
+  gap: 20px;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
+}
+
+.react-dropdown-select-input {
+  display: none !important;
+}

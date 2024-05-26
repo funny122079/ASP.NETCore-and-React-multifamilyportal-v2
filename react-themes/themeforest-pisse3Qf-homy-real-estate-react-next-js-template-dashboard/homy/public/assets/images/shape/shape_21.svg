@@ -1,0 +1,16 @@
+<svg width="116" height="118" viewBox="0 0 116 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_193_19685" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="116" height="118">
+<rect y="117.271" width="117" height="116" transform="rotate(-90 0 117.271)" fill="#010101"/>
+</mask>
+<g mask="url(#mask0_193_19685)">
+<circle cx="14" cy="95.2715" r="2" transform="rotate(-90 14 95.2715)" fill="#010101"/>
+<circle cx="14" cy="57.2715" r="2" transform="rotate(-90 14 57.2715)" fill="#010101"/>
+<circle cx="14" cy="19.2715" r="2" transform="rotate(-90 14 19.2715)" fill="#010101"/>
+<circle cx="52" cy="95.2715" r="2" transform="rotate(-90 52 95.2715)" fill="#010101"/>
+<circle cx="52" cy="57.2715" r="2" transform="rotate(-90 52 57.2715)" fill="#010101"/>
+<circle cx="52" cy="19.2715" r="2" transform="rotate(-90 52 19.2715)" fill="#010101"/>
+<circle cx="90" cy="95.2715" r="2" transform="rotate(-90 90 95.2715)" fill="#010101"/>
+<circle cx="90" cy="57.2715" r="2" transform="rotate(-90 90 57.2715)" fill="#010101"/>
+<circle cx="90" cy="19.2715" r="2" transform="rotate(-90 90 19.2715)" fill="#010101"/>
+</g>
+</svg>
